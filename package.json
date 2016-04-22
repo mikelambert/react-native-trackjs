@@ -1,6 +1,6 @@
 {
   "name": "react-native-trackjs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,16 @@
   "dependencies": {
     "trackjs": "^2.3.1"
   },
-  "author": "",
+  "files": [
+    "index.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/mikelambert/react-native-trackjs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mikelambert/react-native-trackjs.git"
+  },
+  "author": "Mike Lambert",
   "license": "ISC"
 }
