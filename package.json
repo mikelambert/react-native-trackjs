@@ -19,6 +19,13 @@
     "type": "git",
     "url": "git+ssh://git@github.com/mikelambert/react-native-trackjs.git"
   },
+  "maintainers": [
+    {
+      "email": "mlambert@gmail.com",
+      "name": "Mike Lambert"
+    }
+  ],
+
   "author": "Mike Lambert",
   "license": "ISC"
 }
