@@ -69,7 +69,7 @@ function init(config) {
     // Plus the Chrome browser ends up creating a different environment,
     // one that we shouldn't polyfill all the logic below.
     // Maybe make this configurable?
-    //return;
+    return;
   }
   // If we've already set ourselves up, early-return
   if (window.trackJs) {
