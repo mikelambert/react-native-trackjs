@@ -1,5 +1,5 @@
 react-native-trackjs
-===============================
+====================
 
 Reports javascript exceptions in React Native to the TrackJS server, by wrapping the trackjs js distribution.
 

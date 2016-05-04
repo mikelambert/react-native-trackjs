@@ -1,6 +1,6 @@
 {
   "name": "react-native-trackjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,16 @@
       "name": "Mike Lambert"
     }
   ],
-
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "ios",
+    "android",
+    "trackjs"
+  ],
   "author": "Mike Lambert",
   "license": "ISC"
 }
