@@ -33,13 +33,11 @@ function initialize() {
   try {
     // Try accessing the useragent (which will work from the Chrome debugger):
     window.navigator.userAgent[0];
-    // e are running in a Chrome debugger. Let them continue as-is.
+    // We are running in a Chrome debugger. Let them continue as-is.
     // In theory, this shouldn't ever happen because we don't run in __DEV__ mode.
   } catch (e) {
     // If it fails, pollyfill it with our stubbed versions.
-    window.navigator = {
-      userAgent: 'React-Native '  + Platform.OS + ', Version ' + Platform.Version,
-    }
+    window.navigator.userAgent = 'React-Native '  + Platform.OS + ', Version ' + Platform.Version;
     window.location = 'react-native-app';
   }
 
