@@ -60,15 +60,14 @@ function wrap(wrappedFunc) {
 }
 
 function init(config) {
-  // Check the variable set up by react-native's packager
-  if (__DEV__) {
+  // Check if trackJs enabled is set
+  if (typeof config.enabled === 'undefined') {
+    // Disable trackJs in development using the variable set up by react-native's packager
     // Don't send exceptions from __DEV__, it's way too noisy!
     // Live reloading and hot reloading in particular lead to tons of noise...
-    // Plus the Chrome browser ends up creating a different environment,
-    // one that we shouldn't polyfill all the logic below.
-    // Maybe make this configurable?
-    return;
+    config.enabled = !__DEV__;
   }
+
   // If we've already set ourselves up, early-return
   if (window.trackJs) {
     return;
